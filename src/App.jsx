@@ -23,8 +23,13 @@ import Dashboard from "./components/Dashboard";
 import Cart from "./components/Cart";
 import RootLayout from "./components/RootLayout";
 // import App from "./components/UseApi";
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "./components/redux/reducer/counterSlice";
 
 function App() {
+  // const count = useSelector((state) => state.counter.value);
+  // const dispatch = useDispatch();
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
@@ -37,6 +42,9 @@ function App() {
   return (
     <>
       <div>
+        {/* <div>Count:{count}</div>
+        <button onClick={() => dispatch(increment())}>Add Me +</button>
+        <button onClick={() => dispatch(decrement())}>Remove Me -</button> */}
         {/* <Message value="{setCount}"></Message> */}
         {/* <ParentComponent></ParentComponent> */}
         {/* <FunctionClick /> */}

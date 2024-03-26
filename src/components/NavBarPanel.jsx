@@ -12,7 +12,9 @@ const NavBar = () => {
     <div>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="#">Redux Toolkit</Navbar.Brand>
+          <Navbar.Brand href="https://redux-toolkit.js.org/">
+            Redux Toolkit
+          </Navbar.Brand>
           <Nav>
             <Nav.Link to="/" as={Link}>
               Products
